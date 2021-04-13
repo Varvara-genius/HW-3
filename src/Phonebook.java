@@ -16,15 +16,14 @@ public class Phonebook {
         }
     }
 
-    public static void get(String surname) {
+   public static List<String> get(String surname) {
         if (contacts.containsKey(surname)) {
-                System.out.println("Фамилия : " + surname + ", Номер телефона: " + contacts.get(surname));
-            }else {
-            System.out.println(surname + ": " + " контакта с такой фамилией нет");
-            }
+            return contacts.get(surname);
+        } else {
+            return Collections.emptyList();
         }
     }
-
+}
 
 
 
