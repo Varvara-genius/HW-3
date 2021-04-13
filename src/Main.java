@@ -25,8 +25,10 @@ public class Main {
         Phonebook.addContact("Волков", "89215885223");
         Phonebook.addContact("Морозов", "8999811315");
 
-        Phonebook.get("Иванов");
-        Phonebook.get("Смирнов");
+        System.out.println(Phonebook.get("Иванов"));
+        System.out.println(Phonebook.get("Смирнов"));
+        System.out.println(Phonebook.get("Пупкин"));
+
     }
 
 }
